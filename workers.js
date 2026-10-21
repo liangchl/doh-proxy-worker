@@ -11,7 +11,7 @@ const DOH_PROVIDERS = [
     name: "Quad9",
     url: "https://dns11.quad9.net/dns-query",
     weight: 100
-  },
+  }
 ];
 
 // Cache TTL in seconds (5 minutes)
