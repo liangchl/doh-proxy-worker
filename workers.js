@@ -6,52 +6,12 @@
 // List of DoH providers for load balancing and failover
 // Includes both general DNS providers and ad-blocking focused providers
 const DOH_PROVIDERS = [
-  // General DNS providers
-  {
-    name: "Cloudflare",
-    url: "https://cloudflare-dns.com/dns-query",
-    weight: 20
-  },
-  {
-    name: "Google",
-    url: "https://dns.google/dns-query",
-    weight: 15
-  },
+  // General DNS provider
   {
     name: "Quad9",
-    url: "https://dns.quad9.net/dns-query",
-    weight: 15
+    url: "https://dns11.quad9.net/dns-query",
+    weight: 100
   },
-  {
-    name: "OpenDNS",
-    url: "https://doh.opendns.com/dns-query",
-    weight: 10
-  },
-  // Ad-blocking focused providers
-  {
-    name: "AdGuard",
-    url: "https://dns.adguard.com/dns-query",
-    weight: 10
-    // Blocks ads, trackers, and malicious domains
-  },
-  {
-    name: "ControlD",
-    url: "https://freedns.controld.com/p2",
-    weight: 10
-    // Blocks ads and tracking domains
-  },
-  {
-    name: "Mullvad",
-    url: "https://adblock.dns.mullvad.net/dns-query",
-    weight: 10
-    // Blocks ads and trackers
-  },
-  {
-    name: "NextDNS",
-    url: "https://dns.nextdns.io/dns-query",
-    weight: 10
-    // Blocks ads, trackers, and malicious domains
-  }
 ];
 
 // Cache TTL in seconds (5 minutes)
